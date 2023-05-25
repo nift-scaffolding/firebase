@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		@input("templates/head.html")
+	</head>
+
+	<body>
+		<div align="center">
+			@input("templates/menu.html")
+
+			<div id="main-page">
+				@content
+			</div>
+		</div>
+
+		<script type="text/javascript" src="@pathto(assets/js/script)"></script>
+		<script type="text/javascript" src="@pathto(assets/js/menu)"></script>
+
+		<!-- Import and configure the Firebase SDK -->
+		<!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+		<!-- If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+		<script src="/__/firebase/9.14.0/firebase-app-compat.js"></script>
+		<script src="/__/firebase/9.14.0/firebase-auth-compat.js"></script>
+		<script src="/__/firebase/9.14.0/firebase-database-compat.js"></script>
+		<script src="/__/firebase/init.js?useEmulator=true"></script>
+
+		<script type="text/javascript" src="@pathto(assets/js/firebase/auth)"></script>
+	</body>
+</html>

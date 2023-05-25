@@ -1,0 +1,10 @@
+{
+	"last-built": "06:55:04 Friday May 26 2023",
+	"name": "assets/js/firebase/auth",
+	"title": "auth",
+	"template": "templates/template.js",
+	"dependencies": [
+		"content/assets/js/firebase/auth.js",
+		"templates/template.js"
+	]
+}
